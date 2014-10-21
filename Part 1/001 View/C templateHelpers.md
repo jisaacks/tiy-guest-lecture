@@ -29,7 +29,7 @@ MyView = Backbone.Marionette.ItemView.extend({
     return {
       fullname: this.firstname + " " + this.lastname,
       greeting: "Hello, " + this.fullname
-    });
+    };
   }
 
 });
