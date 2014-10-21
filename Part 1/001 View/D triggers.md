@@ -24,7 +24,7 @@ MyView = Backbone.View.extend({
 
 ## Marionette
 
-```
+```javascript
 MyView = Backbone.Marionette.ItemView.extend({
   
   triggers: {
