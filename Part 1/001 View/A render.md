@@ -15,7 +15,7 @@ MyView = Backbone.View.extend({
 });
 
 var view = new MyView(model: someModel);
-$(".some-container").html view.render().el;
+$(".some-container").html(view.render().el);
 ```
 
 ## Marionette
