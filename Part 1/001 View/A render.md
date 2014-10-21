@@ -14,7 +14,7 @@ MyView = Backbone.View.extend({
 
 });
 
-var view = new MyView(model: someModel);
+var view = new MyView({model: someModel});
 $(".some-container").html(view.render().el);
 ```
 
@@ -25,6 +25,6 @@ MyView = Backbone.Marionette.ItemView.extend({
   template: _.template("Hello World")
 });
 
-var view = new MyView(model: someModel);
+var view = new MyView({model: someModel});
 someRegion.show(view);
 ```
