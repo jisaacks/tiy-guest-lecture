@@ -1,10 +1,9 @@
-
 # View.getTemplate
 
 ## Backbone
 
 ```javascript
-myView = Backbone.View.extend({
+MyView = Backbone.View.extend({
 
   template: JST["templates/main"],
 
@@ -24,7 +23,7 @@ myView = Backbone.View.extend({
 ## Marionette
 
 ```javascript
-myView = Backbone.Marionette.ItemView.extend({
+MyView = Backbone.Marionette.ItemView.extend({
   
   getTemplate: function() {
     if (/* some condition */) {

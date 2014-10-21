@@ -1,11 +1,9 @@
-
 # View.templateHelpers
 
 ## Backbone
 
-
 ```javascript
-myView = Backbone.View.extend({
+MyView = Backbone.View.extend({
   
   renderData: function() {
     return _.extend(this.model.toJSON(), {
@@ -25,7 +23,7 @@ myView = Backbone.View.extend({
 ## Marionette
 
 ```javascript
-myView = Backbone.Marionette.ItemView.extend({
+MyView = Backbone.Marionette.ItemView.extend({
   
   templateHelpers: function() {
     return {

@@ -1,10 +1,9 @@
-
 # View.triggers
 
 ## Backbone
 
 ```javascript
-myView = Backbone.View.extend({
+MyView = Backbone.View.extend({
   
   events: {
     "click .submit" : "_onSubmitClick"
@@ -26,7 +25,7 @@ myView = Backbone.View.extend({
 ## Marionette
 
 ```
-myView = Backbone.Marionette.ItemView.extend({
+MyView = Backbone.Marionette.ItemView.extend({
   
   triggers: {
     "click .submit" : "submit"
