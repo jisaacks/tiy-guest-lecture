@@ -23,9 +23,9 @@ var myList = new Backbone.Collection([
   {name: "baz"}
 ]);
 
-var myView = new ListView({collection: myList});
+var listView = new ListView({collection: myList});
 
-myView.render();
+listView.render();
 ```
 
 ```html
