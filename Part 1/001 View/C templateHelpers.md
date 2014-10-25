@@ -27,8 +27,12 @@ MyView = Backbone.Marionette.ItemView.extend({
   
   templateHelpers: function() {
     return {
-      fullname: this.firstname + " " + this.lastname,
-      greeting: "Hello, " + this.fullname
+      fullname: function() {
+        return this.firstname + " " + this.lastname;
+      }
+      greeting: function() {
+        return "Hello, " + this.fullname;
+      }
     };
   }
 
