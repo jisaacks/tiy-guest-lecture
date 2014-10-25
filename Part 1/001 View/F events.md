@@ -1,0 +1,21 @@
+# View.events
+# View.modelEvents
+# View.collectionEvents
+
+```javascript
+Marionette.ItemView.extend({
+
+  events: {
+    "click .add" : "addClicked"
+  },
+  
+  modelEvents: {
+    "change" : "modelChanged"
+  },
+
+  collectionEvents: {
+    "add" : "modelAdded"
+  }
+
+});
+```
