@@ -1,16 +1,16 @@
 # ItemView.serializeData
 
 ```javascript
-MyView = Backbone.Marionette.ItemView.extend({
+var MyView = Backbone.Marionette.ItemView.extend({
   
 });
 
-myModel = new Backbone.Model({
+var myModel = new Backbone.Model({
   firstname: "JD",
   lasname: "Isaacks"
 });
 
-myCollection = new Backbone.Collection([{
+var myCollection = new Backbone.Collection([{
   firstname: "Tyler",
   lastname: "Durden"
 },{
@@ -18,8 +18,8 @@ myCollection = new Backbone.Collection([{
   lastname: "Paulson"
 }]);
 
-mView = new MyView({model:myModel, collection:myCollection});
-cView = new MyView({collection: myCollection});
+var mView = new MyView({model:myModel, collection:myCollection});
+var cView = new MyView({collection: myCollection});
 
 console.log( mView.serializeData() );
 

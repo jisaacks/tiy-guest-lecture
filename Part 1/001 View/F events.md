@@ -3,7 +3,7 @@
 # View.collectionEvents
 
 ```javascript
-Marionette.ItemView.extend({
+var MyView = Marionette.ItemView.extend({
 
   events: {
     "click .add" : "addClicked"

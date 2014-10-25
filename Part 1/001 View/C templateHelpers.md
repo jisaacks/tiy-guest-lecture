@@ -3,7 +3,7 @@
 ## Backbone
 
 ```javascript
-MyView = Backbone.View.extend({
+var MyView = Backbone.View.extend({
   
   renderData: function() {
     return _.extend(this.model.toJSON(), {
@@ -23,7 +23,7 @@ MyView = Backbone.View.extend({
 ## Marionette
 
 ```javascript
-MyView = Backbone.Marionette.ItemView.extend({
+var MyView = Backbone.Marionette.ItemView.extend({
   
   templateHelpers: function() {
     return {

@@ -1,7 +1,7 @@
 # View.ui
 
 ```javascript
-MyView = Backbone.Marionette.ItemView.extend({
+var MyView = Backbone.Marionette.ItemView.extend({
 
   ui: {
     tooltips: "th[title]",

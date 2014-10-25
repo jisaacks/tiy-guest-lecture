@@ -3,7 +3,7 @@
 ## Backbone
 
 ```javascript
-MyView = Backbone.View.extend({
+var MyView = Backbone.View.extend({
   
   template: _.template("Hello World"),
   
@@ -21,7 +21,7 @@ $(".some-container").html(view.render().el);
 ## Marionette
 
 ```javascript
-MyView = Backbone.Marionette.ItemView.extend({
+var MyView = Backbone.Marionette.ItemView.extend({
   template: _.template("Hello World")
 });
 

@@ -3,7 +3,7 @@
 ## Backbone
 
 ```javascript
-MyView = Backbone.View.extend({
+var MyView = Backbone.View.extend({
   
   events: {
     "click .submit" : "_onSubmitClick"
@@ -25,7 +25,7 @@ MyView = Backbone.View.extend({
 ## Marionette
 
 ```javascript
-MyView = Backbone.Marionette.ItemView.extend({
+var MyView = Backbone.Marionette.ItemView.extend({
   
   triggers: {
     "click .submit" : "submit"
