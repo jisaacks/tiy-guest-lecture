@@ -18,7 +18,7 @@
 ```
 
 ```javascript
-var EntryView = Backbone.Marionette.ItemView.extends({
+var EntryView = Backbone.Marionette.ItemView.extend({
   tagName: "tr",
   template: "#entry"
 });
