@@ -20,6 +20,23 @@ window.jisaacks.behaviors.Menu = Backbone.Marionette.Behavior.extend({
 Example Usage:
 
 ```javascript
+var ViewWithMenu = Backbone.Marionette.ItemView.extend({
+  
+  ui: {
+    menuBtn: ".show-btn",
+    menu: ".menu"
+  },
+
+  behaviors: {
+    Menu: {
+      data: function() {
+        return this.model.get("menuData");
+      }
+    }
+  }
+
+});
+
 behaviors.Menu = Backbone.Marionette.Behavior.extend({
   
   events: {
@@ -35,23 +52,6 @@ behaviors.Menu = Backbone.Marionette.Behavior.extend({
         return "<li>" + datum + "</li>";
     });
     return "<ul>" + items.join("") + "</ul>";
-  }
-
-});
-
-var ViewWithMenu = Backbone.Marionette.ItemView.extend({
-  
-  ui: {
-    menuBtn: ".show-btn",
-    menu: ".menu"
-  },
-
-  behaviors: {
-    Menu: {
-      data: function() {
-        return this.model.get("menuData");
-      }
-    }
   }
 
 });
