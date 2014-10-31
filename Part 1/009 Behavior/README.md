@@ -44,7 +44,7 @@ behaviors.Menu = Backbone.Marionette.Behavior.extend({
   },
 
   showMenu: function() {
-    this.view.ui.menu.append( this.buildMenu() );
+    this.view.ui.menu.html( this.buildMenu() );
   },
 
   buildMenu: function() {
