@@ -56,4 +56,7 @@ IronyardLectur::Application.routes.draw do
   #
 
   root "todo_lists#index"
+
+  resources :todo_lists
+  resources :todo_items
 end
