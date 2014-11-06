@@ -1,0 +1,8 @@
+#header
+#content
+#footer
+
+:javascript
+  iy.app.start({
+    todoLists: #{@todo_lists.to_json(:include => :todo_items)}
+  });

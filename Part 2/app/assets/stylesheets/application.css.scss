@@ -14,3 +14,49 @@
 @import "bourbon";
 @import "base/base";
 @import "neat";
+
+body {
+  margin: 0;
+  background: #f3f3f9;
+}
+
+#header {
+  background: #c3d6e9;
+  padding: 20px;
+  text-align: center;
+}
+
+#content {
+  background: white;
+  overflow: hidden;
+}
+
+#footer {
+  color: #999;
+  margin: 20px;
+  text-align: right;
+  clear: both;
+}
+
+.lists {
+  padding: 10px;
+  float: left;
+  width: 29%;
+
+  ul {
+    li {
+      padding: 5px;
+      cursor: pointer;
+      &:hover {
+        background: #d3e6f9;
+      }
+    }
+  }
+}
+
+.items {
+  padding: 10px;
+  float: right;
+  width: 70%;
+  border-left: 3px solid #f3f3f9;
+}

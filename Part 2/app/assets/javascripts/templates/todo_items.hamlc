@@ -1,0 +1,6 @@
+%h1= @name
+%table
+  %thead
+    %tr
+      %th Todo
+  %tbody
