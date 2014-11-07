@@ -1,1 +1,5 @@
 %td= @name
+%td
+  %label
+    %input.completed(type="checkbox")
+    finished

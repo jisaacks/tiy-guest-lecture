@@ -31,8 +31,26 @@ iy.views.TodoLists = Backbone.Marionette.CompositeView.extend({
 });
 
 iy.views.TodoItem = Backbone.Marionette.ItemView.extend({
+  ui: {
+    completed: ".completed"
+  },
+  triggers: {
+    "change @ui.completed" : "completed:changed"
+  },
   tagName: "tr",
-  template: JST["todo_item"]
+  template: JST["todo_item"],
+  onCompletedChanged: function() {
+    if (this.ui.completed.is(":checked")) {
+      this.model.save("completed_at", new Date());
+    } else {
+      this.model.save("completed_at", null);
+    };
+  },
+  onRender: function() {
+    if (this.model.get("completed_at")) {
+      this.ui.completed.prop('checked', true);
+    }
+  }
 });
 
 iy.views.TodoItems = Backbone.Marionette.CompositeView.extend({

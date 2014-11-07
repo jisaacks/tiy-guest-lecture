@@ -3,4 +3,5 @@
   %thead
     %tr
       %th Todo
+      %th
   %tbody
