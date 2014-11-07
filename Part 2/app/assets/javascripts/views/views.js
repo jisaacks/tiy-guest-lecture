@@ -17,6 +17,9 @@ iy.views.PrimaryLayout = Backbone.Marionette.LayoutView.extend({
 });
 
 iy.views.TodoList = Backbone.Marionette.ItemView.extend({
+  triggers: {
+    "click" : "focus"
+  },
   tagName: "li",
   template: JST["todo_list"]
 })

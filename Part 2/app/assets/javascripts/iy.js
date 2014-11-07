@@ -26,10 +26,11 @@ iy.app.addInitializer(function(opts){
 
   layout.lists.show(this.todoListsView);
 
-  this.todoItemsView = new iy.views.TodoItems({
-    model: this.todoLists.first(),
-    collection: this.todoLists.first().items
+  this.listenTo(this.todoListsView, "childview:focus", function(view,opts){
+    var itemsView = new iy.views.TodoItems({
+      model: opts.model,
+      collection: opts.model.items
+    });
+    layout.items.show(itemsView);
   });
-
-  layout.items.show(this.todoItemsView);
 });
