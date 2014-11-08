@@ -66,6 +66,9 @@ iy.views.TodoItem = Backbone.Marionette.ItemView.extend({
     };
   },
   onDeleteClicked: function() {
+    if (!this.model.complete() && !confirm(this.model.get("name") + " not finished. Are you sure?")) {
+      return;
+    }
     this.model.destroy();
   },
   onRender: function() {
