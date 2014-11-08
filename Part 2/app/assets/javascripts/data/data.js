@@ -13,6 +13,9 @@ iy.data.TodoList = Backbone.Model.extend({
   initialize: function() {
     if (this.get("todo_items")) {
       this.items = new iy.data.TodoItems(this.get("todo_items"));
+      this.listenTo(this.items, "add", function(model) {
+        model.set("todo_list_id", this.id);
+      });
       this.unset("todo_items");
     }
   }

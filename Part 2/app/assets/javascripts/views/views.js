@@ -25,6 +25,14 @@ iy.views.TodoList = Backbone.Marionette.ItemView.extend({
 })
 
 iy.views.TodoLists = Backbone.Marionette.CompositeView.extend({
+  ui: {
+    showAdd: ".show-add",
+    add: ".add",
+    addName: ".add input[name=name]",
+  },
+  behaviors: {
+    AddItem: {}
+  },
   template: JST["todo_lists"],
   childView: iy.views.TodoList,
   childViewContainer: "ul"
@@ -54,6 +62,14 @@ iy.views.TodoItem = Backbone.Marionette.ItemView.extend({
 });
 
 iy.views.TodoItems = Backbone.Marionette.CompositeView.extend({
+  ui: {
+    showAdd: ".show-add",
+    add: ".add",
+    addName: ".add input[name=name]",
+  },
+  behaviors: {
+    AddItem: {}
+  },
   template: JST["todo_items"],
   childView: iy.views.TodoItem,
   childViewContainer: "tbody"

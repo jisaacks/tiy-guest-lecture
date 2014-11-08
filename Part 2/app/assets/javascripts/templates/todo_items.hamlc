@@ -1,4 +1,9 @@
-%h1= @name
+%h1
+  = @name
+  %button.show-add +
+%form.add
+  %input(name="name", type="text")
+  %input(type="submit", value="Add")
 %table
   %thead
     %tr

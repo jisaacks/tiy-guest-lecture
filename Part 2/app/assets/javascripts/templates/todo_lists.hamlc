@@ -1,2 +1,7 @@
-%h3 Things to Do
+%h3
+  Things to Do
+  %button.show-add +
 %ul
+%form.add
+  %input(name="name", type="text")
+  %input(type="submit", value="Add")
