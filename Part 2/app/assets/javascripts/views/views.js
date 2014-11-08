@@ -16,6 +16,14 @@ iy.views.PrimaryLayout = Backbone.Marionette.LayoutView.extend({
   }
 });
 
+iy.views.Relax = Backbone.Marionette.ItemView.extend({
+  template: _.template("Relax!")
+});
+
+iy.views.AddThings = Backbone.Marionette.ItemView.extend({
+  template: _.template("Add some things!")
+});
+
 iy.views.TodoList = Backbone.Marionette.ItemView.extend({
   triggers: {
     "click" : "focus"
@@ -35,6 +43,7 @@ iy.views.TodoLists = Backbone.Marionette.CompositeView.extend({
   },
   template: JST["todo_lists"],
   childView: iy.views.TodoList,
+  emptyView: iy.views.Relax,
   childViewContainer: "ul"
 });
 
@@ -84,6 +93,7 @@ iy.views.TodoItems = Backbone.Marionette.CompositeView.extend({
   },
   template: JST["todo_items"],
   childView: iy.views.TodoItem,
+  emptyView: iy.views.AddThings,
   childViewContainer: "tbody",
   onDeleteClicked: function() {
     this.collection.trigger("delete:requested");
