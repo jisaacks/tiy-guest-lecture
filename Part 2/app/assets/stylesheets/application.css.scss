@@ -60,3 +60,34 @@ body {
   width: 70%;
   border-left: 3px solid #f3f3f9;
 }
+
+button.show-add {
+  padding: 0px 6px 3px 6px;
+  text-align: 3px;
+  vertical-align: 4px;
+  font-size: .7em;
+}
+form.add {
+  display: none;
+  position: relative;
+  padding: 20px;
+  input[type=text] {
+    box-sizing: border-box;
+    display: block;
+    width: calc(100% - 100px);
+    padding: 4px;
+    margin-right: 0;
+    float: left;
+    border-radius: 3px 0 0 3px;
+    border: 1px solid #ccc;
+  }
+  input[type=submit] {
+    outline: none;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding: 5px 10px;
+    width: 60px;
+    border: 1px solid #477dca;
+    border-left: none;
+  }
+}
