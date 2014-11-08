@@ -61,6 +61,15 @@ body {
   border-left: 3px solid #f3f3f9;
 }
 
+.util {
+  float: right;
+  margin-right: 10px;
+}
+
+button.delete {
+  padding: 5px;
+  font-size: .8em;
+}
 button.show-add {
   padding: 0px 6px 3px 6px;
   text-align: 3px;
