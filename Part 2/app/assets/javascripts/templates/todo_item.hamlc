@@ -1,5 +1,7 @@
-%td= @name
+%td(width="60%")= @name
 %td
   %label
     %input.completed(type="checkbox")
     finished
+%td
+  %button.delete Delete

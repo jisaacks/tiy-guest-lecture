@@ -1,3 +1,8 @@
+.util
+  %button.delete.delete-list
+    Delete
+    = @name
+    List
 %h1
   = @name
   %button.show-add +
@@ -5,8 +10,4 @@
   %input(name="name", type="text")
   %input(type="submit", value="Add")
 %table
-  %thead
-    %tr
-      %th Todo
-      %th
   %tbody

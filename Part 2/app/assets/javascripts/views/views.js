@@ -40,10 +40,12 @@ iy.views.TodoLists = Backbone.Marionette.CompositeView.extend({
 
 iy.views.TodoItem = Backbone.Marionette.ItemView.extend({
   ui: {
-    completed: ".completed"
+    completed: ".completed",
+    destroy: ".delete"
   },
   triggers: {
-    "change @ui.completed" : "completed:changed"
+    "change @ui.completed" : "completed:changed",
+    "click @ui.destroy" : "delete:clicked"
   },
   tagName: "tr",
   template: JST["todo_item"],
@@ -53,6 +55,9 @@ iy.views.TodoItem = Backbone.Marionette.ItemView.extend({
     } else {
       this.model.save("completed_at", null);
     };
+  },
+  onDeleteClicked: function() {
+    this.model.destroy();
   },
   onRender: function() {
     if (this.model.get("completed_at")) {
@@ -66,11 +71,21 @@ iy.views.TodoItems = Backbone.Marionette.CompositeView.extend({
     showAdd: ".show-add",
     add: ".add",
     addName: ".add input[name=name]",
+    destroy: ".delete-list"
+  },
+  triggers: {
+    "click @ui.destroy" : "delete:clicked"
   },
   behaviors: {
     AddItem: {}
   },
+  collectionEvents: {
+    "todolist:destroyed" : "remove"
+  },
   template: JST["todo_items"],
   childView: iy.views.TodoItem,
-  childViewContainer: "tbody"
+  childViewContainer: "tbody",
+  onDeleteClicked: function() {
+    this.collection.trigger("delete:requested");
+  },
 });
