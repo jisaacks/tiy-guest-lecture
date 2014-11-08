@@ -38,5 +38,12 @@ iy.app.addInitializer(function(opts){
       model: model,
       collection: model.items
     }));
-  })
+  });
+
+  if (this.todoLists.length) {
+    layout.items.show(new iy.views.TodoItems({
+      model: this.todoLists.first(),
+      collection: this.todoLists.first().items
+    }));
+  }
 });
