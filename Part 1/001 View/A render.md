@@ -28,3 +28,5 @@ var MyView = Backbone.Marionette.ItemView.extend({
 var view = new MyView({model: someModel});
 someRegion.show(view);
 ```
+
+[Next](B%20getTemplate.md)
