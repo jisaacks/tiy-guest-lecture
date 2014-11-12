@@ -3,7 +3,7 @@
 ```javascript
 var MyView = Marionette.ItemView.extend({
 
-  onFoo: function(arg, quite) {
+  onFoo: function(arg, quiet) {
     if (quite) {
       console.log("bar");
     } else {
