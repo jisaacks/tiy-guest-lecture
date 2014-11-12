@@ -22,5 +22,6 @@ var ListView = Backbone.Marionette.CollectionView.extend({
   }
 
 });
+```
 
 [Next](D%20viewOptions.md)
