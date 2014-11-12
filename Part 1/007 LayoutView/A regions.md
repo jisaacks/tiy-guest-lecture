@@ -3,7 +3,7 @@
 ```html
 <script id="article" type="text/html">
   <div class="body"></body>
-  <div class="comments"></comments>
+  <div class="comments"></div>
 </script>
 ```
 
@@ -21,8 +21,8 @@ var ArticleView = Backbone.Marionette.LayoutView.extend({
 
 var article = new ArticleView();
 
-article.body.show( new ArticleBody() );
-article.comments.show( new CommentsView() );
+article.getRegion( "body"     ).show( new ArticleBody()  );
+article.getRegion( "comments" ).show( new CommentsView() );
 ```
 
 [Next](../008%20Object)

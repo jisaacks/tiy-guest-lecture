@@ -6,4 +6,4 @@ region.show( someView );
 region.empty(); // removes and destroys someView
 ```
 
-[Next](C%20reset.md)
+[Next](../006%20Application)
