@@ -11,3 +11,5 @@ App.addRegions({
 
 App.getRegion("content").show( someView );
 ```
+
+[Next](E%20removeRegion.md)

@@ -9,3 +9,5 @@ App.addInitializer(function(opts){
 
 App.start({who: "class"}); // Hello, class
 ```
+
+[Next](C%20addRegions.md)

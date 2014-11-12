@@ -34,3 +34,5 @@ var ListView = Backbone.Marionette.CollectionView.extend({
 
 });
 ```
+
+[Next](../004%20CompositeView)

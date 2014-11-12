@@ -11,3 +11,5 @@ region.show( otherView ); // someView is destroyed
 
 region.show( thirdView, {preventDestroy: true} ); // otherView is not destroyed
 ```
+
+[Next](B%20empty.md)

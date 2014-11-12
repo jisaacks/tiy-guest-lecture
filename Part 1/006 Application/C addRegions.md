@@ -9,3 +9,5 @@ App.addRegions({
   footer: "#footer"
 });
 ```
+
+[Next](D%20getRegion.md)

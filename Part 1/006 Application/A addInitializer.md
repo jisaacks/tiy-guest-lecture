@@ -14,3 +14,5 @@ App.addInitializer(function(opts){
 });
 
 ```
+
+[Next](B%20start.md)

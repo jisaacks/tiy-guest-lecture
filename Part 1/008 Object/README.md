@@ -16,3 +16,5 @@ var SimpleClass = Backbone.Marionette.Object.extend({
 var simpleInstance = new SimpleClass();
 simpleInstance.trigger("foo"); // bar
 ```
+
+[Next](../009%20Behavior)

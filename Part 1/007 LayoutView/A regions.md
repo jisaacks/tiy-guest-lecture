@@ -24,3 +24,5 @@ var article = new ArticleView();
 article.body.show( new ArticleBody() );
 article.comments.show( new CommentsView() );
 ```
+
+[Next](../008%20Object)

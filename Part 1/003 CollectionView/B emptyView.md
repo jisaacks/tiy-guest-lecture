@@ -27,3 +27,5 @@ emptyView.render();
   <li>There are no items to show</li>
 </ul>
 ```
+
+[Next](C%20getView.md)

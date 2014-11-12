@@ -13,3 +13,5 @@ App.getRegion("content").show( someView );
 
 App.removeRegion("content");
 ```
+
+[Next](../007%20LayoutView)
