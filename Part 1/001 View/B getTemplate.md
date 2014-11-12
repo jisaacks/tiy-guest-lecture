@@ -35,3 +35,5 @@ var MyView = Backbone.Marionette.ItemView.extend({
 
 });
 ```
+
+[Next](C%20templateHelpers.md)

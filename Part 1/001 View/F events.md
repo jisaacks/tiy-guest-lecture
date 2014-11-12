@@ -19,3 +19,5 @@ var MyView = Marionette.ItemView.extend({
 
 });
 ```
+
+[Next](G%20triggerMethod.md)

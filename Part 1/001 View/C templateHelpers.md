@@ -39,3 +39,4 @@ var MyView = Backbone.Marionette.ItemView.extend({
 });
 ```
 
+[Next](D%20triggers.md)
